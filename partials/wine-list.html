@@ -1,0 +1,61 @@
+<!-- <div class="row">
+  
+  <div class="main-container" ng-controller="WineListCtrl">
+    <div class="col-xs-12">
+        <h1 class="text-center">My Wine Library</h1>
+      <div class="row">
+        
+        <!- search container -->
+          <!-- <div class="col-xs-6 col-xs-offset-3">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for ..." ng-model="searchText">
+              </div>    
+            </div>
+          </div>
+          <div ng-repeat="newWine in items | filter: searchText">
+            
+            <div class="panel panel-default">
+              <div class="panel-body">
+                
+                  <div class="col-xs-5 text-center"><a href="#/items/details/{{newWine.id}}">{{newWine.Name}}</a></div>
+                  <div class="col-xs-5 col-xs-offset-2">{{newWine.Varietal}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> --> 
+<!--  -->
+<div class="main-container">
+  
+  <table class="table">
+    <caption class="lead">My Wine Library</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Vineyard</th>
+        <th>Varietal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="newWine in items">
+        <td><a href="#/items/details/{{newWine.id}}">{{newWine.Name}}</a></td>
+        <td>{{newWine.Vineyard}}</td>
+        <td>{{newWine.Varietal}}</td>
+      <td><a href="#/items/edit/{{newWine.id}}" class="btn btn-small btn-primary">Edit</a> <a class="btn btn-small btn-danger" ng-click="delete(newWine.id)">Delete</a></td>
+
+      </tr>
+    </tbody>
+  </table>
+  <p>
+      <a href="#/items/new" class="btn btn-success" role="button">Add New Product</a>
+  </p>
+
+</div>
+        
+        
+
+

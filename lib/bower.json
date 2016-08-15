@@ -1,0 +1,23 @@
+{
+  "name": "lib",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Whitney Cormack <cormack.whitney@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/whitneycormack/Quiz1-html-css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "firebase": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Vino Vita</title>
+  <!-- Bootstrap Links -->
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+  <!--  Google Fonts and Styling --> 
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body ng-app="WineApp">
+
+  <!-- ============= NAV BAR ============= -->
+  
+  <div ng-include="'/partials/nav.html'"></div>
+  
+
+
+  <!-- ============= MAIN CONTAINER ============= -->
+  
+<!-- <div class="row">
+  <div class="col-xs-8 col-xs-offset-2 main-container-fluid">
+    <div class="col-xs-10" ng-view>  
+    </div>
+  </div>
+</div> -->
+
+  <div class="main-container main-container-fluid starter-template">
+
+      <div ng-view></div>
+
+        </div>
+
+
+  <!-- ============= LINK TAGS ============= -->
+  <!-- **BOOTSTRAP - JQUERY  -->
+   <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- ANGULAR - FIREBASE -->
+  <script src="lib/bower_components/angular/angular.min.js"></script>
+  <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+  <script src="lib/bower_components/firebase/firebase.js"></script>
+
+  <!-- APP FIRST -->
+  <script src="scripts/app.js"></script>
+
+  <!-- FACTORIES SECOND -->
+  <script src="scripts/values/FirebaseCreds.js"></script>
+  <script src="scripts/factories/WineFactory.js"></script>
+  <script src="scripts/factories/AuthFactory.js"></script>
+
+  <!-- CONTROLLERS LAST -->
+  <script src="scripts/controllers/NavCtrl.js"></script>
+  <script src="scripts/controllers/LoginCtrl.js"></script>
+  <script src="scripts/controllers/WineListCtrl.js"></script>
+  <script src="scripts/controllers/WineNewCtrl.js"></script>
+  <script src="scripts/controllers/WineViewCtrl.js"></script>
+  <script src="scripts/controllers/EditCtrl.js"></script>
+
+
+</body>
+</html>
+
